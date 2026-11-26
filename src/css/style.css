@@ -1,0 +1,106 @@
+/*------ 1. Tokens ---------- */
+:root {
+  --color-text: #1f2933;
+  --color-muted: #52606d;
+  --color-bg: #ffffff;
+  --color-surface: #f0f4f8;
+  --color-brand: #1f3a5f;
+  --color-accent: #0b5cad;
+  --color-border: #616e7c;
+  --color-focus-dark: #ffd166;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 3rem;
+  --radius: 0.5rem;
+}
+
+/*--------- 2. Base Style -----------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+h1,
+h2 {
+  line-height: 1.25;
+}
+a {
+  color: var(--color-accent);
+}
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/*--------- 3. Skip Link -----------*/
+.skip-link {
+  position: absolute;
+  top: -4rem;
+  left: var(--space-1);
+  padding: var(--space-1), var(--space-2);
+  color: #ffffff;
+  background-color: var(--color-accent);
+}
+.skip-link:focus {
+  top: var(--space-1);
+}
+
+/*---------------- 4. Header and Navigation -----------*/
+.site-header {
+  padding: var(--space-2);
+  color: #ffffff;
+  background-color: var(--color-brand);
+}
+.site-header :focus-visible {
+  outline-color: var(--color-focus-dark);
+}
+.site-name {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.role {
+  margin: 0 0 var(--space-3);
+}
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-list a {
+  display: inline-block;
+  padding: 0.5rem 0.25rem;
+  color: #ffffff;
+}
+
+/*verify this css */
+.nav-list a[aria-current="page"] {
+  font-weight: 700;
+  text-decoration-thickness: 3px;
+}
+/*---------- 5. Main Content ----------------*/
+.main {
+  flex: 1;
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-2) var(--space-4);
+}
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+}
