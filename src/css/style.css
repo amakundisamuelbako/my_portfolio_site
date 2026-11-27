@@ -198,12 +198,12 @@ p {
   font-weight: 700;
 }
 
-.contact-list dd {
+.contact-list dd 
   margin: 0;
 }
 
 /*----------- 8. Page Footer ------------*/
-.site-footer {
+.site-footer 
   padding: var(--space-2);
   color: var(--color-muted);
   background-color: var(--color-surface);
