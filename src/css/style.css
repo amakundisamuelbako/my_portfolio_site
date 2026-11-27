@@ -213,7 +213,6 @@ p {
 .site-footer p {
   margin: 0;
 }
-
 /* ---------- 9. Wider screens ---------- */
 @media (min-width: 40rem) {
   .site-header {
