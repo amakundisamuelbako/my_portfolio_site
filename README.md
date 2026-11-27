@@ -1,3 +1,4 @@
+![Site checks](https://github.com/amakundisamuelbako/my_portfolio-site/actions/workflows/site.yml/badge.svg)
 **Portfolio Site Documentation**
 
 _About Me_
