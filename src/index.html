@@ -32,20 +32,19 @@
     <!--Site main-->
     <main class="main">
       <!--Hero: Site introduction-->
-      <section class="intro">
+      <section id="home" class="intro">
         <h1 id="intro-title">Hey there, I'm Amakundi</h1>
-        <article class="hero">
-          <h2>Me at a glance</h2>
-          <p class="lead">
-            I"m a Full-stack Engineer. I build and ship production-ready systems
-            with Python, JavaScript, FastAPI, Django, and DevOps
-          </p>
-          <p>
-            <a class="button" href="#skills">Click here to see my skills</a> and
-            <a class="button" href="#projects">Click here to see my projects</a>
-          </p>
-        </article>
-        <article class="bio">
+        <h2>Me at a glance</h2>
+        <p class="lead">
+          I"m a Full-stack Engineer. I build and ship production-ready systems
+          with Python, JavaScript, FastAPI, Django, and DevOps
+        </p>
+        <p>
+          <a class="button" href="#skills">Click here to see my skills</a> and
+          <a class="button" href="#projects">Click here to see my projects</a>
+        </p>
+
+        <article id="about" class="bio">
           <h2>Who I'm and what do</h2>
           <p>
             My name is <b>Amakundi, Samuel Bako</b>. I'm a full-stack engineer
@@ -59,7 +58,10 @@
             business owner or you want to collaborate, I'm open for work.
           </p>
         </article>
-        <article class="skills">
+      </section>
+      <section id="skills" class="skills">
+        <h2>Skills Stacks</h2>
+        <article>
           <h2>The following are the skills I posses</h2>
           <ul>
             <li>Python</li>
@@ -71,32 +73,33 @@
           </ul>
         </article>
       </section>
+
       <!--Project Section-->
-      <section class="projects">
-        <h1>Completed Projects</h1>
+      <section id="projects" class="projects">
+        <h2>Completed Projects</h2>
         <ul id="project-list" class="project-list">
-          <li class="project-items">
-            <h2>Simple Calculator</h2>
+          <li>
+            <h3>Simple Calculator</h3>
             <p>
               A Django web application that calls a FastAPI calculator service,
               displaying results through django views, template and forms
             </p>
-            <h3>Tech Stack</h3>
-            <ul>
+            <h4>Tech Stack</h4>
+            <ul class="tech-stack">
               <li>Python</li>
               <li>Django</li>
               <li>FastAPI</li>
             </ul>
           </li>
-          <li class="project-items">
-            <h2>Taskmaster CMS</h2>
+          <li>
+            <h3>Taskmaster CMS</h3>
             <p>
               A fully functional task management REST API with JWT
               authentication, SQLIte persistence via SQLAlchemy, Pydantic vs
               schemas,background workers, and automated test.
             </p>
-            <h3>Tech Stack</h3>
-            <ul>
+            <h4>Tech Stack</h4>
+            <ul class="tech-stack">
               <li>Python</li>
               <li>Django</li>
               <li>FastAPI</li>
@@ -104,14 +107,14 @@
               <li>SQLAlchemy</li>
             </ul>
           </li>
-          <li class="project-items">
-            <h2>Authentication System</h2>
+          <li>
+            <h3>Authentication System</h3>
             <p>
               A production-grade authentication system demonstrating 12+ design
               patterns.
             </p>
-            <h3>Tech Stack</h3>
-            <ul>
+            <h4>Tech Stack</h4>
+            <ul class="tech-stack">
               <li>Python</li>
               <li>PyJWT</li>
               <li>bcrypt</li>
@@ -120,11 +123,11 @@
               <li>FastAPI</li>
             </ul>
           </li>
-          <li class="project-items">
-            <h2>Bank System</h2>
+          <li>
+            <h3>Bank System</h3>
             <p>A browser based web interface for a banking system.</p>
-            <h3>Tech Stack</h3>
-            <ul>
+            <h4>Tech Stack</h4>
+            <ul class="tech-stack">
               <li>Flask</li>
               <li>Python</li>
               <li>HTML</li>
@@ -134,8 +137,8 @@
         </ul>
       </section>
       <!--Contacts Section-->
-      <section class="contact">
-        <h1>Contact</h1>
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
         <p>
           I would love to hear from you. The quickest way to reach me is by
           email

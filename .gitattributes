@@ -1,0 +1,2 @@
+# Use unix line ending, prettier expects this rather than windows and 
+* text=auto eol=lf
