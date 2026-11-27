@@ -42,7 +42,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: GEt the code
+      - name: Get the code
         uses: actions/checkout@v7
 
       - name: Set up GitHub Pages
