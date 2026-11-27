@@ -51,8 +51,7 @@ jobs:
       - name: Assemble the site
         run: |
           mkdir _site 
-          cp src/index.html _site/ 
-          for dir in 0[1-7]-*/; do cp -r "$dir" _site/; done
+          cp src/index.html _site/; done
 
       - name: Upload the site
         uses: actions/upload-pages-artifact@v5
